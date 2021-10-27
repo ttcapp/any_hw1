@@ -22,10 +22,24 @@ class AmarHomepage extends StatefulWidget {
 class _AmarHomepageState extends State<AmarHomepage> {
   @override
   Widget build(BuildContext context) {
+    double width= MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text("First App"),
+      ),
+      body: Container(
+        width: width,
+        color: Colors.purple,
+        child: Column(
+          children: [
+            ElevatedButton(
+                onPressed: (){
+
+                },
+                child: Text("Frist button"))
+          ],
+        ),
       ),
 
 
